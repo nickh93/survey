@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Take Our Survey!</h1>
+
+      <form id="survey">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input id="fname" class="form-control" type="text">
+          <br>
+          <label for="lname">Last Name</label>
+          <input id="lname" class="form-control" type="text">
+          <br>
+          <label for="pet">What is your Favorite Kind of Pet?</label>
+          <select class="form-control" id="pet">
+            <option>Dogs</option>
+            <option>Cats</option>
+            <option>Birds</option>
+            <option>Reptiles</option>
+          </select>
+          <br>
+          <label>Favorite Movie Genres:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="horror">
+              Horror
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="comedy">
+              Comedy
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="sci-fi">
+              Sci-fi
+            </label>
+          </div>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="born">Date of Birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <br>
+      <div class="output">
+        <p>First Name: <span class="fname-output"></span></p>
+        <p>Last Name: <span class="lname-output"></span></p>
+        <p>Favorite Pet: <span class="pet-output"></span></p>
+        <p>Favorite Movie: <span class="movie-output"></span></p>
+        <p>Date of Birth: <span class="dob-output"></span></p>
+        <div class="color-group">
+          <p>Favorite Color: <span class="color-output"></span></p>
+          <div class="color-block"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
